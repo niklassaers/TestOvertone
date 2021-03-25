@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -11,26 +11,9 @@
 		859A9479260CC48500535E75 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 859A9478260CC48500535E75 /* ContentView.swift */; };
 		859A947B260CC48800535E75 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 859A947A260CC48800535E75 /* Assets.xcassets */; };
 		859A947E260CC48800535E75 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 859A947D260CC48800535E75 /* Preview Assets.xcassets */; };
-		859A9489260CC48800535E75 /* TestOvertoneTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 859A9488260CC48800535E75 /* TestOvertoneTests.swift */; };
-		859A9494260CC48800535E75 /* TestOvertoneUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 859A9493260CC48800535E75 /* TestOvertoneUITests.swift */; };
+		859A94A6260CC4F200535E75 /* AudioKit in Frameworks */ = {isa = PBXBuildFile; productRef = 859A94A5260CC4F200535E75 /* AudioKit */; };
+		859A94AB260CC50500535E75 /* MyEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 859A94AA260CC50500535E75 /* MyEngine.swift */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		859A9485260CC48800535E75 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 859A946B260CC48500535E75 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 859A9472260CC48500535E75;
-			remoteInfo = TestOvertone;
-		};
-		859A9490260CC48800535E75 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 859A946B260CC48500535E75 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 859A9472260CC48500535E75;
-			remoteInfo = TestOvertone;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		859A9473260CC48500535E75 /* TestOvertone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestOvertone.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -39,12 +22,7 @@
 		859A947A260CC48800535E75 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		859A947D260CC48800535E75 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		859A947F260CC48800535E75 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		859A9484260CC48800535E75 /* TestOvertoneTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestOvertoneTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		859A9488260CC48800535E75 /* TestOvertoneTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestOvertoneTests.swift; sourceTree = "<group>"; };
-		859A948A260CC48800535E75 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		859A948F260CC48800535E75 /* TestOvertoneUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestOvertoneUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		859A9493260CC48800535E75 /* TestOvertoneUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestOvertoneUITests.swift; sourceTree = "<group>"; };
-		859A9495260CC48800535E75 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		859A94AA260CC50500535E75 /* MyEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyEngine.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,20 +30,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		859A9481260CC48800535E75 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		859A948C260CC48800535E75 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
+				859A94A6260CC4F200535E75 /* AudioKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,8 +41,6 @@
 			isa = PBXGroup;
 			children = (
 				859A9475260CC48500535E75 /* TestOvertone */,
-				859A9487260CC48800535E75 /* TestOvertoneTests */,
-				859A9492260CC48800535E75 /* TestOvertoneUITests */,
 				859A9474260CC48500535E75 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -86,8 +49,6 @@
 			isa = PBXGroup;
 			children = (
 				859A9473260CC48500535E75 /* TestOvertone.app */,
-				859A9484260CC48800535E75 /* TestOvertoneTests.xctest */,
-				859A948F260CC48800535E75 /* TestOvertoneUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -100,6 +61,7 @@
 				859A947A260CC48800535E75 /* Assets.xcassets */,
 				859A947F260CC48800535E75 /* Info.plist */,
 				859A947C260CC48800535E75 /* Preview Content */,
+				859A94AA260CC50500535E75 /* MyEngine.swift */,
 			);
 			path = TestOvertone;
 			sourceTree = "<group>";
@@ -110,24 +72,6 @@
 				859A947D260CC48800535E75 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
-			sourceTree = "<group>";
-		};
-		859A9487260CC48800535E75 /* TestOvertoneTests */ = {
-			isa = PBXGroup;
-			children = (
-				859A9488260CC48800535E75 /* TestOvertoneTests.swift */,
-				859A948A260CC48800535E75 /* Info.plist */,
-			);
-			path = TestOvertoneTests;
-			sourceTree = "<group>";
-		};
-		859A9492260CC48800535E75 /* TestOvertoneUITests */ = {
-			isa = PBXGroup;
-			children = (
-				859A9493260CC48800535E75 /* TestOvertoneUITests.swift */,
-				859A9495260CC48800535E75 /* Info.plist */,
-			);
-			path = TestOvertoneUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -146,45 +90,12 @@
 			dependencies = (
 			);
 			name = TestOvertone;
+			packageProductDependencies = (
+				859A94A5260CC4F200535E75 /* AudioKit */,
+			);
 			productName = TestOvertone;
 			productReference = 859A9473260CC48500535E75 /* TestOvertone.app */;
 			productType = "com.apple.product-type.application";
-		};
-		859A9483260CC48800535E75 /* TestOvertoneTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 859A949B260CC48800535E75 /* Build configuration list for PBXNativeTarget "TestOvertoneTests" */;
-			buildPhases = (
-				859A9480260CC48800535E75 /* Sources */,
-				859A9481260CC48800535E75 /* Frameworks */,
-				859A9482260CC48800535E75 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				859A9486260CC48800535E75 /* PBXTargetDependency */,
-			);
-			name = TestOvertoneTests;
-			productName = TestOvertoneTests;
-			productReference = 859A9484260CC48800535E75 /* TestOvertoneTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		859A948E260CC48800535E75 /* TestOvertoneUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 859A949E260CC48800535E75 /* Build configuration list for PBXNativeTarget "TestOvertoneUITests" */;
-			buildPhases = (
-				859A948B260CC48800535E75 /* Sources */,
-				859A948C260CC48800535E75 /* Frameworks */,
-				859A948D260CC48800535E75 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				859A9491260CC48800535E75 /* PBXTargetDependency */,
-			);
-			name = TestOvertoneUITests;
-			productName = TestOvertoneUITests;
-			productReference = 859A948F260CC48800535E75 /* TestOvertoneUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
 
@@ -198,14 +109,6 @@
 					859A9472260CC48500535E75 = {
 						CreatedOnToolsVersion = 12.4;
 					};
-					859A9483260CC48800535E75 = {
-						CreatedOnToolsVersion = 12.4;
-						TestTargetID = 859A9472260CC48500535E75;
-					};
-					859A948E260CC48800535E75 = {
-						CreatedOnToolsVersion = 12.4;
-						TestTargetID = 859A9472260CC48500535E75;
-					};
 				};
 			};
 			buildConfigurationList = 859A946E260CC48500535E75 /* Build configuration list for PBXProject "TestOvertone" */;
@@ -217,13 +120,14 @@
 				Base,
 			);
 			mainGroup = 859A946A260CC48500535E75;
+			packageReferences = (
+				859A94A4260CC4F200535E75 /* XCRemoteSwiftPackageReference "AudioKit" */,
+			);
 			productRefGroup = 859A9474260CC48500535E75 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				859A9472260CC48500535E75 /* TestOvertone */,
-				859A9483260CC48800535E75 /* TestOvertoneTests */,
-				859A948E260CC48800535E75 /* TestOvertoneUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -238,20 +142,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		859A9482260CC48800535E75 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		859A948D260CC48800535E75 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -261,39 +151,11 @@
 			files = (
 				859A9479260CC48500535E75 /* ContentView.swift in Sources */,
 				859A9477260CC48500535E75 /* TestOvertoneApp.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		859A9480260CC48800535E75 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				859A9489260CC48800535E75 /* TestOvertoneTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		859A948B260CC48800535E75 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				859A9494260CC48800535E75 /* TestOvertoneUITests.swift in Sources */,
+				859A94AB260CC50500535E75 /* MyEngine.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		859A9486260CC48800535E75 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 859A9472260CC48500535E75 /* TestOvertone */;
-			targetProxy = 859A9485260CC48800535E75 /* PBXContainerItemProxy */;
-		};
-		859A9491260CC48800535E75 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 859A9472260CC48500535E75 /* TestOvertone */;
-			targetProxy = 859A9490260CC48800535E75 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		859A9496260CC48800535E75 /* Debug */ = {
@@ -456,90 +318,6 @@
 			};
 			name = Release;
 		};
-		859A949C260CC48800535E75 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = D47QA73JUH;
-				INFOPLIST_FILE = TestOvertoneTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.saers.test.TestOvertoneTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TestOvertone.app/TestOvertone";
-			};
-			name = Debug;
-		};
-		859A949D260CC48800535E75 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = D47QA73JUH;
-				INFOPLIST_FILE = TestOvertoneTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.saers.test.TestOvertoneTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TestOvertone.app/TestOvertone";
-			};
-			name = Release;
-		};
-		859A949F260CC48800535E75 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = D47QA73JUH;
-				INFOPLIST_FILE = TestOvertoneUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.saers.test.TestOvertoneUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = TestOvertone;
-			};
-			name = Debug;
-		};
-		859A94A0260CC48800535E75 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = D47QA73JUH;
-				INFOPLIST_FILE = TestOvertoneUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.saers.test.TestOvertoneUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = TestOvertone;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -561,25 +339,26 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		859A949B260CC48800535E75 /* Build configuration list for PBXNativeTarget "TestOvertoneTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				859A949C260CC48800535E75 /* Debug */,
-				859A949D260CC48800535E75 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		859A949E260CC48800535E75 /* Build configuration list for PBXNativeTarget "TestOvertoneUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				859A949F260CC48800535E75 /* Debug */,
-				859A94A0260CC48800535E75 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		859A94A4260CC4F200535E75 /* XCRemoteSwiftPackageReference "AudioKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/AudioKit/AudioKit.git";
+			requirement = {
+				branch = "v5-main";
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		859A94A5260CC4F200535E75 /* AudioKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 859A94A4260CC4F200535E75 /* XCRemoteSwiftPackageReference "AudioKit" */;
+			productName = AudioKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 859A946B260CC48500535E75 /* Project object */;
 }
