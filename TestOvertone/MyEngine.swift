@@ -26,7 +26,7 @@ public class MyEngine {
             envelope.attackDuration = 0.01
             envelope.decayDuration = 0.0
             envelope.sustainLevel = 1.0
-            envelope.releaseDuration = 0.3
+            envelope.releaseDuration = 0.05
             return envelope
         }
         locks = (0..<polyphony).map { _ in false }
@@ -67,14 +67,16 @@ public class MyEngine {
 
     public func stop(lock: Lock) {
         let envelope = envelopes[lock]
-        DispatchQueue.main.asyncAfter(deadline: .now() + Double(envelope.releaseDuration)) {
+        let osc = oscs[lock]
 
-            envelope.stop()
+        DispatchQueue.main.asyncAfter(deadline: .now() + (Double(envelope.releaseDuration) * 2.0)) {
+
+            osc.stop()
+            osc.reset()
             self.locks[lock] = false
         }
-        
-        let osc = oscs[lock]
-        osc.stop()
+        envelope.stop()
+
     }
 }
 
