@@ -69,7 +69,7 @@ public class MyEngine {
         let envelope = envelopes[lock]
         let osc = oscs[lock]
 
-        DispatchQueue.main.asyncAfter(deadline: .now() + (Double(envelope.releaseDuration) * 2.0)) {
+        DispatchQueue.main.asyncAfter(deadline: .now() + (Double(envelope.releaseDuration) * 3.0)) {
 
             osc.stop()
             osc.reset()
