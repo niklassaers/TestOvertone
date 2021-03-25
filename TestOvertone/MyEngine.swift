@@ -88,7 +88,7 @@ public class MyEngineDemo {
     public func playDemo() {
         let engine = MyEngine.shared
         lastLocks.append(engine.play(frequency: 440))
-        lastLocks.append(engine.play(frequency: 870)) // 48.5))
+        lastLocks.append(engine.play(frequency: 548.5))
     }
     
     public func stopDemo() {
